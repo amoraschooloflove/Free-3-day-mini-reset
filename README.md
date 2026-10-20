@@ -1,21 +1,24 @@
-# Osebna stran — nelihevir
+# Amora School of Love — Mini Reset
 
-Statična osebna spletna stran v slovenščini. Datoteke za objavo so v `site/`; odpri `site/index.html` za lokalni ogled. Ni namestitve odvisnosti ali koraka gradnje.
+Live website: https://nelihevir.github.io/
+Repository: https://github.com/nelihevir/nelihevir.github.io
 
-## GitHub Pages
+Static HTML, CSS and JavaScript in `site/`. No build dependencies. Preview with `python3 -m http.server 8080 --directory site`.
 
-Ciljni osebni repozitorij: `nelihevir/nelihevir.github.io`. Pred ustvarjanjem preveri, ali že obstaja, in ohrani obstoječo vsebino.
+Every push to `main` publishes `site/` through `.github/workflows/pages.yml`.
 
-Po povezavi GitHuba potisni te datoteke na vejo `main`. V repozitoriju izberi **Settings → Pages → Build and deployment → Source → GitHub Actions**. Workflow `.github/workflows/pages.yml` nato objavi mapo `site/` ob vsakem pushu na `main`.
+## Signups
 
-Predvideni naslov po uspešni objavi: https://nelihevir.github.io/
+The primary Mini Reset calls to action point to the existing public MailerLite page: https://free-3-day-mini-reset.subscribepage.io
 
-## Urejanje
+The separate community signup uses the user-supplied MailerLite form `160030360653006212` (callback `28441096`). It currently adds subscribers to the community mailing list. **It is not confirmed to trigger the Mini Reset automation.** Keep these signups distinct until the corresponding MailerLite automation is activated and verified.
 
-Vsebina: `site/index.html`. Oblikovanje: `site/style.css`. Spremembe v glavni veji sprožijo samodejno objavo. Stran trenutno vsebuje samo potrjeno uporabniško ime in povezave na GitHub; biografijo in posamezne projekte dodaj po potrditvi vsebine.
+Email and country remain required, as in the provided embed; first name is optional. Optional surname was omitted. MailerLite handles submission and invokes the success callback. The success state must never appear merely from a button click. No API keys or subscriber details are stored in this repository.
 
-## Trenutno stanje
+To enable direct Mini Reset signup, create or select a dedicated MailerLite embedded form, connect it to the correct active automation, and replace the primary signup slot with that form. Email sequence: Day 1, delay one day, Day 2, delay one day, Day 3. If a different form is used, replace its action, fields, wrapper identifiers and success callback together. Verify with an owner-controlled address after configuration.
 
-Repozitorij: https://github.com/nelihevir/nelihevir.github.io
+## Design and content
 
-Objavo in njeno stanje spremljaj v zavihku Actions. Lokalna orodja v `.tools/` so izključena iz različic.
+Cream, sage and blush palette, responsive layout, keyboard accessible form and FAQ, native sharing with clipboard fallback, page metadata. Portrait and biographical facts come from the existing public Amora MailerLite page; portrait is compressed locally. External fonts load from Google Fonts. The MailerLite embedded-form script is the only external application script. No custom analytics or artificial deadlines/testimonials.
+
+Unused source image downloads are retained under ignored `.tools/source-assets/`, outside the published site.
