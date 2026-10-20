@@ -43,7 +43,3 @@ resetEmail.addEventListener('input', () => {
     resetEmailError.textContent = '';
   }
 });
-
-// Choose Google’s compact widget before its deferred script renders on narrow screens.
-const captcha = document.querySelector('.g-recaptcha');
-if (captcha && captcha.parentElement.clientWidth < 304) captcha.dataset.size = 'compact';
