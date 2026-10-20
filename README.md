@@ -17,7 +17,7 @@ The Mini Reset form is connected to the owner’s active MailerLite automation. 
 
 ## Design and content
 
-Cream, sage and blush palette, responsive layout, keyboard accessible form and FAQ, native sharing with clipboard fallback, page metadata. Portrait and biographical facts come from the existing public Amora MailerLite page; portrait is compressed locally. External fonts load from Google Fonts. The MailerLite embedded-form script is the only external application script. No custom analytics or artificial deadlines/testimonials.
+White, warm brown and sand palette with exact reference pink `#EE0879` and sand `#E5D1C5`, responsive layout, keyboard accessible form and FAQ, native sharing with clipboard fallback, page metadata. Portrait and biographical facts come from the existing public Amora MailerLite page; portrait is compressed locally. External fonts load from Google Fonts. The MailerLite embedded-form script is the only external application script. No custom analytics or artificial deadlines/testimonials.
 
 Unused source image downloads are retained under ignored `.tools/source-assets/`, outside the published site.
 
@@ -25,4 +25,4 @@ Hero photo: owner-provided `DSCF8506-LR.jpg`, optimized as `site/assets/neli-bea
 
 The Mini Reset email form appears directly in the hero. Other signup calls to action link back to that single form, preserving a unique form ID and success callback.
 
-Official owner-supplied brown landscape logo: `site/assets/amora-logo.png` (transparent margins trimmed and downscaled). Both photos use a local SVG feathering mask, leaving the photographs unchanged. Native sharing sends only `{url}` to avoid targets combining a link twice; clipboard fallback copies that URL once.
+Official owner-supplied brown landscape logo: `site/assets/amora-logo.png` (transparent margins trimmed and downscaled). The hero uses the beach photograph as a full-section background with an opaque-to-transparent reading overlay. The smaller guide portrait has a crisp padded frame. Native sharing sends only `{url}` to avoid targets combining a link twice; clipboard fallback copies that URL once.
