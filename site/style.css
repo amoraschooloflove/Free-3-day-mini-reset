@@ -30,7 +30,6 @@ h1 { font-size: clamp(58px, 6vw, 84px); line-height: 1.02; letter-spacing: -3px;
 h2 { font-size: 52px; line-height: 1.06; letter-spacing: -1.5px; margin-bottom: 20px; }
 em { color: #8c6657; font-weight: 400; }
 .eyebrow { font-size: 10px; font-weight: 600; line-height: 1.5; letter-spacing: 2px; margin: 0 0 22px; }
-.small-sun { font-size: 19px; vertical-align: middle; margin-right: 9px; color: var(--pink); }
 /* A full-section photograph, with an opaque reading area on the left. */
 .hero { position: relative; isolation: isolate; overflow: hidden; background: var(--paper); }
 .hero::before { content: ''; position: absolute; inset: 0 0 0 auto; width: 72%; z-index: -2; background: url('assets/neli-beach.jpg') center bottom / cover no-repeat; }
@@ -68,7 +67,6 @@ em { color: #8c6657; font-weight: 400; }
 .success-heart { font: 45px var(--serif); color: var(--pink); }
 .ribbon { background: var(--sand); border-block: 1px solid #d8c0b1; }
 .ribbon > .wrap { display: flex; justify-content: space-between; align-items: center; padding-block: 20px; font-size: 12px; }
-.ribbon-flower { font-size: 24px; color: #a06d65; }
 .section { padding-block: 90px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 50px; margin-bottom: 42px; }
 .section-heading h2 { margin-bottom: 0; }
@@ -92,10 +90,10 @@ em { color: #8c6657; font-weight: 400; }
 .recognise-list > p { display: flex; gap: 22px; padding-block: 16px; border-bottom: 1px solid #d5bfb1; margin-bottom: 0; }
 .recognise-list > p > span { font: 24px/1.5 var(--serif); color: #a85a70; }
 .gentle-note { font: italic 24px/1.3 var(--serif); padding-top: 24px; max-width: 350px; }
-/* A slightly smaller portrait, with a crisp, understated picture frame. */
+/* Rounded portrait, without a border, backing panel or shadow. */
 .guide { display: grid; grid-template-columns: .85fr 1.15fr; gap: 90px; align-items: center; }
-.guide-photo { position: relative; width: 100%; max-width: 360px; margin-inline: auto; padding: 13px 13px 0; border: 1px solid #b99d89; background: #fffaf5; box-shadow: 0 12px 30px #73554512; }
-.guide-photo img { width: 100%; height: auto; aspect-ratio: .96; object-fit: cover; object-position: 60% center; border-radius: 1px; display: block; }
+.guide-photo { position: relative; width: 100%; max-width: 360px; margin-inline: auto; }
+.guide-photo img { width: 100%; height: auto; aspect-ratio: .96; object-fit: cover; object-position: 60% center; border-radius: 6px 6px 140px 6px; display: block; }
 .photo-label { display: block; font-size: 8px; letter-spacing: 1.5px; margin: 15px 0 16px; text-align: center; color: var(--muted); }
 .guide-copy > p:not(.eyebrow) { font-size: 13px; color: var(--muted); }
 .guide-copy p.guide-intro { font-size: 14px; color: var(--ink); margin-top: 25px; }
@@ -103,7 +101,6 @@ em { color: #8c6657; font-weight: 400; }
 .signature { font: italic 32px var(--serif); display: block; margin-top: 22px; color: #a16670; }
 .begin-section { background: #f4e2de; border-block: 1px solid #e6cfc5; text-align: center; }
 .begin-inner { padding: 65px 0 25px; max-width: 900px; }
-.begin-sun { display: block; font-size: 42px; line-height: 1; margin-bottom: 28px; color: #b36578; }
 .begin-inner h2 { font-size: 64px; }
 .begin-inner > p:not(.eyebrow) { font-size: 14px; color: var(--muted); margin-bottom: 26px; }
 .begin-inner .button { min-width: 300px; }
@@ -125,7 +122,7 @@ details[open] > summary::after { content: '−'; }
 .share-actions button { background: transparent; border: 1px solid #ba8e8c; padding: 12px 20px; border-radius: 30px; color: var(--ink); cursor: pointer; font-size: 11px; }
 .share-actions a:hover { text-decoration: underline; }
 .footer { position: relative; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; align-items: center; padding-top: 40px; padding-bottom: 30px; }
-body > footer { background: var(--sand); width: 100%; padding-inline: max(50px, calc((100vw - 1220px) / 2)); margin-top: 45px; }
+.site-footer { background: var(--sand); width: 100%; margin-top: 45px; }
 .footer .brand img { width: 180px; height: auto; }
 .footer > p { font: italic 20px var(--serif); text-align: center; margin-bottom: 0; }
 .footer > div { display: flex; justify-content: end; gap: 22px; font-size: 10px; }
@@ -149,7 +146,7 @@ body > footer { background: var(--sand); width: 100%; padding-inline: max(50px, 
   .day p { min-height: 110px; }
   .ribbon > .wrap { font-size: 10px; }
   .hero-description { font-size: 13px; }
-  body > footer { padding-inline: 32px; }
+
 }
 @media (max-width: 760px) {
   .header { height: 105px; }
@@ -167,7 +164,7 @@ body > footer { background: var(--sand); width: 100%; padding-inline: max(50px, 
   .hero-note small, .hero-note .note-icon { display: none; }
   .hero-benefits { margin-top: 25px; }
   .ribbon > .wrap { justify-content: center; gap: 20px; }
-  .ribbon > .wrap > span:nth-last-child(-n+2) { display: none; }
+  .ribbon > .wrap > span:last-child { display: none; }
   .section { padding-block: 60px; }
   .section-heading { display: block; }
   .section-heading > p { max-width: 440px; margin-top: 24px; }
@@ -181,6 +178,7 @@ body > footer { background: var(--sand); width: 100%; padding-inline: max(50px, 
   .recognise { padding-block: 55px; }
   .recognise-grid > div > p:not(.eyebrow) { max-width: 100%; }
   .guide-photo { max-width: 310px; }
+  .guide-photo img { border-bottom-right-radius: 100px; }
   .guide-copy { max-width: 500px; }
   .begin-inner { padding-top: 50px; }
   .begin-foot { font-size: 7px; }
@@ -204,7 +202,7 @@ body > footer { background: var(--sand); width: 100%; padding-inline: max(50px, 
   .hero-benefits { font-size: 9px; gap: 12px; }
   .hero-note p { font-size: 25px; }
   .ribbon > .wrap { font-size: 8px; gap: 14px; }
-  .ribbon-flower { font-size: 19px; }
+
   h2, .recognise h2 { font-size: 43px; }
   .begin-inner h2 { font-size: 52px; }
   .begin-inner .button { min-width: 0; }
@@ -213,7 +211,7 @@ body > footer { background: var(--sand); width: 100%; padding-inline: max(50px, 
   .share-actions { gap: 18px; font-size: 10px; }
   .share-actions button { font-size: 10px; }
   .footer .brand img { width: 140px; }
-  body > footer { padding-inline: 20px; }
+
   .footer p.footer-note { text-align: right; }
   .micro { font-size: 9px; }
 }

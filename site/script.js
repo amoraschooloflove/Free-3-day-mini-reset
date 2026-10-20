@@ -3,7 +3,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const shareButton = document.getElementById('share-button');
 const shareStatus = document.getElementById('share-status');
 shareButton.addEventListener('click', async () => {
-  const url = 'https://nelihevir.github.io/';
+  const url = 'https://nelihevir.github.io/Free-3-day-mini-reset/';
   if (navigator.share) {
     // Share one URL field: some share targets duplicate links when combining fields.
     try { await navigator.share({ url }); return; }
