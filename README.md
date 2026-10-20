@@ -1,7 +1,7 @@
 # Amora School of Love — Mini Reset
 
-Live website: https://amoraschooloflove.github.io/nelihevir.github.io/
-Repository: https://github.com/amoraschooloflove/nelihevir.github.io
+Live website: https://nelihevir.github.io/
+Repository: https://github.com/nelihevir/nelihevir.github.io
 
 Static HTML, CSS and JavaScript in `site/`. No build dependencies. Preview with `python3 -m http.server 8080 --directory site`.
 
