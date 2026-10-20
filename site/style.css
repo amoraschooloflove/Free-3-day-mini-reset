@@ -234,3 +234,7 @@ details[open] > summary::after { content: '−'; }
 .ml-form-recaptcha { margin: 16px 0; }
 .captcha-error { display: none; }
 .ml-form-recaptcha.ml-error .captcha-error { display: block; }
+
+.footer .social-links { flex-direction: row; align-items: center; gap: 12px; }
+.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; }
+.social-links svg { display: block; }
