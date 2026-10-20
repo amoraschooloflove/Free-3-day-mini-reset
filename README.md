@@ -9,13 +9,11 @@ Every push to `main` publishes `site/` through `.github/workflows/pages.yml`.
 
 ## Signups
 
-The primary Mini Reset calls to action point to the existing public MailerLite page: https://free-3-day-mini-reset.subscribepage.io
+The primary Mini Reset signup uses the user-supplied MailerLite form `201841479851705858` (callback `47366701`). Email is its only field. The owner confirmed on 20 October 2026 that the Mini Reset automation is **not yet configured**. At the owner’s explicit request, the page uses final Mini Reset signup copy without a coming-soon label. The success message confirms the signup and suggests checking the inbox; it does not claim that the first lesson has already been sent. MailerLite form submission can add subscribers; the website cannot activate the account's email workflow.
 
-The separate community signup uses the user-supplied MailerLite form `160030360653006212` (callback `28441096`). It currently adds subscribers to the community mailing list. **It is not confirmed to trigger the Mini Reset automation.** Keep these signups distinct until the corresponding MailerLite automation is activated and verified.
+The separate community signup uses form `160030360653006212` (callback `28441096`). Its email and country fields remain required; first name is optional. These forms have independent success callbacks. MailerLite invokes them after successful submission. No success state is shown merely from a button click. No API keys or subscriber details are stored in this repository.
 
-Email and country remain required, as in the provided embed; first name is optional. Optional surname was omitted. MailerLite handles submission and invokes the success callback. The success state must never appear merely from a button click. No API keys or subscriber details are stored in this repository.
-
-To enable direct Mini Reset signup, create or select a dedicated MailerLite embedded form, connect it to the correct active automation, and replace the primary signup slot with that form. Email sequence: Day 1, delay one day, Day 2, delay one day, Day 3. If a different form is used, replace its action, fields, wrapper identifiers and success callback together. Verify with an owner-controlled address after configuration.
+To enable the actual series, connect the new form to an active MailerLite automation: Day 1 email, delay one day, Day 2 email, delay one day, Day 3 email. Verify delivery with an owner-controlled address. The page is already prepared with final signup copy. No new HTML code is necessary if this same form is retained.
 
 ## Design and content
 

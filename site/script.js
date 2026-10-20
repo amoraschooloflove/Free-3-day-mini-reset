@@ -29,3 +29,12 @@ window.ml_webform_success_28441096 = function () {
 document.getElementById('community-link').addEventListener('click', () => {
   document.querySelector('#community > details').open = true;
 });
+
+// Separate callback for the Mini Reset list, invoked by MailerLite on success.
+window.ml_webform_success_47366701 = function () {
+  const container = document.getElementById('mlb2-47366701');
+  container.querySelector('.row-form').style.display = 'none';
+  const success = container.querySelector('.row-success');
+  success.style.display = 'block';
+  success.focus();
+};
