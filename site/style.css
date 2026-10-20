@@ -238,3 +238,7 @@ details[open] > summary::after { content: '−'; }
 .footer .social-links { flex-direction: row; align-items: center; gap: 12px; }
 .social-links a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; }
 .social-links svg { display: block; }
+
+/* Scale the complete compact widget, including its checkbox and label. */
+.ml-form-recaptcha .g-recaptcha { width: 140px; height: 123px; }
+.ml-form-recaptcha .g-recaptcha > div { transform: scale(.85); transform-origin: top left; }
