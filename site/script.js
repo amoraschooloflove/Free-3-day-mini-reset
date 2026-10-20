@@ -3,7 +3,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const shareButton = document.getElementById('share-button');
 const shareStatus = document.getElementById('share-status');
 shareButton.addEventListener('click', async () => {
-  const url = 'https://nelihevir.github.io/';
+  const url = 'https://amoraschooloflove.github.io/nelihevir.github.io/';
   if (navigator.share) {
     // Share one URL field: some share targets duplicate links when combining fields.
     try { await navigator.share({ url }); return; }
