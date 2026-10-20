@@ -239,6 +239,6 @@ details[open] > summary::after { content: '−'; }
 .social-links a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; }
 .social-links svg { display: block; }
 
-/* Scale the complete compact widget, including its checkbox and label. */
-.ml-form-recaptcha .g-recaptcha { width: 140px; height: 123px; }
+/* Keep the horizontal widget proportional, including its checkbox and label. */
+.ml-form-recaptcha .g-recaptcha { width: 259px; height: 67px; }
 .ml-form-recaptcha .g-recaptcha > div { transform: scale(.85); transform-origin: top left; }
