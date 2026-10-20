@@ -27,3 +27,23 @@ window.ml_webform_success_47366701 = function () {
   success.style.display = 'block';
   success.focus();
 };
+
+// Native validation remains in place; these messages also work with screen readers.
+const resetEmail = document.getElementById('reset-email');
+const resetEmailError = document.getElementById('reset-email-error');
+resetEmail.addEventListener('invalid', () => {
+  resetEmail.setAttribute('aria-invalid', 'true');
+  resetEmailError.textContent = resetEmail.validity.valueMissing
+    ? 'Please enter your email address.'
+    : 'Please enter an email address like name@example.com.';
+});
+resetEmail.addEventListener('input', () => {
+  if (resetEmail.validity.valid) {
+    resetEmail.removeAttribute('aria-invalid');
+    resetEmailError.textContent = '';
+  }
+});
+
+// Choose Google’s compact widget before its deferred script renders on narrow screens.
+const captcha = document.querySelector('.g-recaptcha');
+if (captcha && captcha.parentElement.clientWidth < 304) captcha.dataset.size = 'compact';

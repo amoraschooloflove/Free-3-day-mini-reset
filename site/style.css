@@ -47,12 +47,12 @@ em { color: #8c6657; font-weight: 400; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 35px; min-height: 58px; padding: 15px 26px; border-radius: 999px; background: var(--pink); color: #fff; font-size: 19px; font-weight: 700; line-height: 1.4; transition: box-shadow .2s, transform .2s; }
 .button span { font-size: 24px; font-weight: 400; line-height: 1; }
 .button:hover { box-shadow: 0 7px 22px #ee08792a; transform: translateY(-2px); }
-.micro { font-size: 10px; line-height: 1.8; color: var(--muted); margin: 13px 0 0; }
+.micro { font-size: 11px; line-height: 1.8; color: var(--muted); margin: 13px 0 0; }
 .hero-benefits { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px; font-size: 10px; }
 .hero-benefits i { font-style: normal; margin-right: 4px; color: var(--pink); }
 #signup-slot { max-width: 450px; scroll-margin-top: 30px; }
 .amora-form { text-align: left; }
-.amora-form label { display: block; margin-bottom: 7px; font-size: 11px; color: var(--ink); }
+.amora-form label { display: block; margin-bottom: 7px; font-size: 12px; color: var(--ink); }
 .amora-form input:not([type=hidden]) { border: 1px solid #bda697; border-radius: 5px; padding: 14px 17px; background: #fff; width: 100%; min-height: 54px; color: var(--ink); font-size: 16px; }
 .amora-form input:focus { outline: 2px solid var(--pink); outline-offset: 2px; }
 .ml-form-fieldRow { margin-bottom: 12px; }
@@ -104,7 +104,7 @@ em { color: #8c6657; font-weight: 400; }
 .begin-inner h2 { font-size: 64px; }
 .begin-inner > p:not(.eyebrow) { font-size: 14px; color: var(--muted); margin-bottom: 26px; }
 .begin-inner .button { min-width: 300px; }
-.begin-inner .micro { font-size: 10px; }
+.begin-inner .micro { font-size: 11px; }
 .begin-foot { border-top: 1px solid #dcbfb3; margin-top: 45px; padding-top: 22px; display: flex; justify-content: space-around; gap: 15px; font-size: 8px; letter-spacing: 1.4px; }
 .faq { display: grid; grid-template-columns: 1fr 1.15fr; gap: 90px; }
 .faq h2 { font-size: 46px; }
@@ -145,7 +145,7 @@ details[open] > summary::after { content: '−'; }
   .day h3 { font-size: 26px; }
   .day p { min-height: 110px; }
   .ribbon > .wrap { font-size: 10px; }
-  .hero-description { font-size: 13px; }
+  .hero-description { font-size: 14px; }
 
 }
 @media (max-width: 760px) {
@@ -198,8 +198,8 @@ details[open] > summary::after { content: '−'; }
   .hero-inner { padding-top: 32px; }
   .hero h1 { font-size: 58px; letter-spacing: -2px; }
   .eyebrow { font-size: 8px; letter-spacing: 1.5px; }
-  .hero-description { font-size: 13px; }
-  .hero-benefits { font-size: 9px; gap: 12px; }
+  .hero-description { font-size: 14px; }
+  .hero-benefits { font-size: 10px; gap: 12px; }
   .hero-note p { font-size: 25px; }
   .ribbon > .wrap { font-size: 8px; gap: 14px; }
 
@@ -213,6 +213,24 @@ details[open] > summary::after { content: '−'; }
   .footer .brand img { width: 140px; }
 
   .footer p.footer-note { text-align: right; }
-  .micro { font-size: 9px; }
+  .micro { font-size: 11px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } }
+
+/* MailerLite writes backend failures into these existing integration hooks. */
+.form-error { color: #a12a46; font-size: 13px; line-height: 1.5; margin: 8px 0 12px; }
+.form-error:empty, .reset-form .d-none { display: none; }
+.reset-form input[aria-invalid="true"] { border-color: #a12a46; }
+#signup-slot a { text-decoration: underline; text-underline-offset: 3px; }
+
+.confirmation-reminder strong { color: var(--ink); }
+.signup-next-steps { padding-left: 20px; margin: 15px 0 18px; font-size: 13px; line-height: 1.7; }
+.signup-next-steps li + li { margin-top: 8px; }
+.inbox-help { margin-bottom: 18px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.inbox-help summary { padding-block: 15px; font-weight: 600; }
+.inbox-help summary::after { top: 11px; }
+.inbox-help p { padding-right: 5px; font-size: 12px; }
+
+.ml-form-recaptcha { margin: 16px 0; }
+.captcha-error { display: none; }
+.ml-form-recaptcha.ml-error .captcha-error { display: block; }

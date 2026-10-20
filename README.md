@@ -28,3 +28,7 @@ The Mini Reset email form appears directly in the hero. Other signup calls to ac
 Official owner-supplied brown landscape logo: `site/assets/amora-logo.png` (transparent margins trimmed and downscaled). The hero uses the beach photograph as a full-section background with an opaque-to-transparent reading overlay. The smaller guide portrait uses the initial rounded shape, without a border, backing panel or shadow. Native sharing sends only `{url}` to avoid targets combining a link twice; clipboard fallback copies that URL once.
 
 Decorative star/sun glyphs were removed at the owner’s request. Footer background is on an outer full-width container; its content uses the inner page-width grid.
+
+## Local pre-launch refinement
+
+See [REVIEW_NOTES.md](REVIEW_NOTES.md) for prepared changes, verification and outstanding MailerLite consent, bot-protection and privacy-notice setup. This refinement is local-only until explicit publication approval.
