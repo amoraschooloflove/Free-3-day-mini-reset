@@ -1,7 +1,7 @@
 # Amora School of Love — Mini Reset
 
-Live website: https://nelihevir.github.io/Free-3-day-mini-reset/
-Repository: https://github.com/nelihevir/Free-3-day-mini-reset
+Live website: https://amoraschooloflove.github.io/Free-3-day-mini-reset/
+Repository: https://github.com/amoraschooloflove/Free-3-day-mini-reset
 
 Static HTML, CSS and JavaScript in `site/`. No build dependencies. Preview with `python3 -m http.server 8080 --directory site`.
 
